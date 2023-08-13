@@ -1,13 +1,17 @@
 import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import MarketingApp from './component/MarketingApp';
+import Header from './component/Header';
 
 function App() {
   return (
-    <div>
-      <h1>microfrontend marketing in contianer!!</h1>
-      <hr />
-      <MarketingApp />
-    </div>
+    <BrowserRouter>
+      <div>
+        <Header />
+
+        <MarketingApp />
+      </div>
+    </BrowserRouter>
   );
 }
 
